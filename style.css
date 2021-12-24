@@ -258,7 +258,6 @@ header .largura-max-cabecalho nav .topicos li:hover{
 
 #projetos{
     width: 100vw;
-    height: 60vh;
 
     display: flex;
     flex-direction: column;
