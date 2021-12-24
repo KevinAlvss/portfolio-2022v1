@@ -1,0 +1,266 @@
+/* css padrão */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+
+    overflow-x: hidden;
+
+    font-family: 'Roboto', sans-serif;
+    color: #FAFAFA;
+    
+    background-color: rgb(29, 30, 66);
+}
+
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    color: #AAA;
+}
+/* cabeçalho */
+
+header{
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    backdrop-filter: blur(20px);
+    background-color: 1px solid rgba(114, 114, 126, 0.2);
+
+    z-index: 9999;
+}
+
+header .largura-max-cabecalho{
+    margin: 0 150px;
+    width: 100%;
+}
+
+header .largura-max-cabecalho nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .largura-max-cabecalho nav .titulo-cabecalho{
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+header .largura-max-cabecalho nav .topicos{
+    list-style: none;
+    display: flex;
+}
+
+header .largura-max-cabecalho nav .topicos li{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 10px;
+    transition: all 2s ease-in-out;
+}
+
+header .largura-max-cabecalho nav .topicos li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* home */
+
+.home{
+    padding: 12vh 160px;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home .apresentacao{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+}
+
+.home .apresentacao div{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.home .apresentacao p{
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.home .apresentacao h3{
+    font-size: 2.6rem;
+    letter-spacing: .2rem;
+}
+
+@keyframes pisca {
+    0%,100%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+}
+
+.pisca{
+    background-color: white;
+    width: 1.5px;
+    height: 30px;
+    display: block;
+
+    margin: 15px 10px;
+
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.68, 1, 0.19, 0.95);
+    animation-iteration-count:infinite;
+}
+
+.home .apresentacao .button-box{
+    gap: 10px;
+}
+
+.home .apresentacao .button-box .home-button{
+    height: 50px;
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(29,30,66);
+    background: linear-gradient(90deg, rgba(29,30,66,1) 0%, rgba(79,46,208,1) 52%);
+
+    text-decoration: none;
+    color: #FAFAFA;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    transition: all .2s ease-in-out;
+}
+
+.home .apresentacao .button-box .home-button:hover{
+    width: 250px;
+}
+
+.mouse-box{
+    width: 100%;
+    height: fit-content;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    top: -25px;
+    position: relative;
+}
+
+.mouse-box img{
+    height: 70px;
+    filter: invert(1);
+}
+
+@keyframes sobedesce{
+    0%, 100%{
+        top: 0px;
+    }
+    50%{
+        top: -10px;
+    }
+}
+
+.home .home-img{
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    animation-name: sobedesce;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+
+.home .home-img img{
+    width: 100%;
+}
+
+/* sobre mim */
+
+#sobre-mim {
+    width: 100vw;
+    height: 70vh;
+    
+    background-color: #110E1B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-mim .sobre-mim-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+#sobre-mim .sobre-mim-img img{
+    height: 60vh;
+}
+
+#sobre-mim section .sobre-mim-text-box{
+    max-width: 500px;
+    margin-left: 70px;
+}
+
+#sobre-mim section .sobre-mim-text-box h1{
+    font-size: 2.4rem;
+
+    margin-bottom: 40px;
+}
+
+#sobre-mim section .sobre-mim-text-box p{
+    font-size: 1.2rem;
+}
+
+/* projetos */
+
+#projetos{
+    width: 100vw;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
