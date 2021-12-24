@@ -20,3 +20,4 @@ const sr = ScrollReveal({
 sr.reveal(".sobre-mim-text-box", { delay: 400 });
 sr.reveal(".sobre-mim-img", { delay: 200 });
 sr.reveal(".sr-apresentacao", { delay: 300 });
+sr.reveal(".projeto", { delay: 200 });
