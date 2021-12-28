@@ -190,21 +190,6 @@ header .largura-max-cabecalho nav .topicos li:hover{
     width: 250px;
 }
 
-.mouse-box{
-    width: 100%;
-    height: fit-content;
-    justify-self: end;
-    display: flex;
-    justify-content: center;
-    top: -25px;
-    position: relative;
-}
-
-.mouse-box img{
-    height: 70px;
-    filter: invert(1);
-}
-
 @keyframes sobedesce{
     0%, 100%{
         top: 0px;
