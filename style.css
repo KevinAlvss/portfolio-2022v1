@@ -489,3 +489,14 @@ footer section .social-media a{
         width: 100% !important;
     }
 }
+
+@media(max-width: 550px){
+    .conhecimentos-container{
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    
+    .sobre-mim-text-box{
+        margin: 0 auto !important;
+    }
+}
