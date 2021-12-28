@@ -13,12 +13,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="pt-br" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta name="theme-color" content="#4F2ED0"/>
+    <link rel="stylesheet" href="./style.css" media="all" />
     <!-- <script type="text/javascript" src="./script.js"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto&display=swap" rel="stylesheet" media="all">
 
     <title>Kevin Alves | Portfolio</title>
 </head>
@@ -31,7 +32,7 @@
                 <ul class="topicos">
                     <li><a href="#sobre-mim" >Sobre mim</a></li>
                     <li><a href="#projetos" >Projetos</a></li>
-                    <li><a href="#" >Conhecimentos</a></li>
+                    <li><a href="#conhecimentos" >Conhecimentos</a></li>
                 </ul>
             </nav>
         </div>
@@ -94,6 +95,7 @@
         </section >
     </main>
 
+    <!-- projetos -->
     <main id="projetos">
         <h2>Projetos</h2>
         <section class="projetos-container">
@@ -134,9 +136,41 @@
         href="https://github.com/KevinAlvss?tab=repositories" 
         target="_blank" 
         class="repos-link"
+        rel="noreferrer noopener"
         >
             Meus repositórios no GitHub
         </a>
+    </main>
+
+    <!-- conhecimentos -->
+    <main id="conhecimentos">
+        <h2>Conhecimentos</h2>
+        <section class="conhecimentos-container">
+            <div class="tecnologia html">
+                <img src="./assets/html.svg" alt="html">
+                <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+            </div>
+
+            <div class="tecnologia css">
+                <img src="./assets/css.svg" alt="css">
+                <p>CSS é um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) a um documento web.</p>
+            </div>
+
+            <div class="tecnologia js">
+                <img src="./assets/js.svg" alt="js">
+                <p>Javascript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+            </div>
+
+            <div class="tecnologia react">
+                <img src="./assets/react.svg" alt="react">
+                <p>React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário (frontend) em páginas web.</p>
+            </div>
+
+            <div class="tecnologia styled">
+                <img src="./assets/styled.svg" alt="styled-compoenets">
+                <p>Styled Components é uma biblioteca (lib) que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript.</p>
+            </div>
+        </section>
     </main>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="./script.js"></script>

@@ -22,3 +22,8 @@ sr.reveal(".sobre-mim-img", { delay: 200 });
 sr.reveal(".sr-apresentacao", { delay: 300 });
 sr.reveal(".projeto", { delay: 200 });
 sr.reveal(".repos-link", { delay: 300 });
+sr.reveal(".html", { delay: 200 });
+sr.reveal(".css", { delay: 300 });
+sr.reveal(".js", { delay: 400 });
+sr.reveal(".react", { delay: 500 });
+sr.reveal(".styled", { delay: 600 });

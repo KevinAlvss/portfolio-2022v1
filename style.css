@@ -328,3 +328,53 @@ header .largura-max-cabecalho nav .topicos li:hover{
 .repos-link:hover:after {
     right: 0;   
 }
+
+#conhecimentos{
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #110E1B;
+
+    padding: 100px 0;
+}
+
+#conhecimentos h2{
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+
+.conhecimentos-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 80%;
+}
+
+.conhecimentos-container .tecnologia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: tomato; */
+    background-color: #0E091B;
+    border-radius: 5px;
+
+    height: 400px;
+    width: 200px;
+
+    padding: 20px;
+}
+
+.conhecimentos-container .tecnologia img{
+    width: 100px;
+    margin-bottom: 16px;
+}
+
+.conhecimentos-container .tecnologia p{
+    text-align: center;
+}
