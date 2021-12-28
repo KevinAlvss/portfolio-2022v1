@@ -377,7 +377,6 @@ header .largura-max-cabecalho nav .topicos li:hover{
     flex-direction: column;
     align-items: center;
 
-    /* background-color: tomato; */
     background-color: #0E091B;
     border-radius: 5px;
 
@@ -385,6 +384,9 @@ header .largura-max-cabecalho nav .topicos li:hover{
     width: 200px;
 
     padding: 20px;
+
+    border: 1px solid transparent;
+    transition: all .2s ease-in-out;
 }
 
 .conhecimentos-container .tecnologia img{
@@ -394,4 +396,8 @@ header .largura-max-cabecalho nav .topicos li:hover{
 
 .conhecimentos-container .tecnologia p{
     text-align: center;
+}
+
+.conhecimentos-container .tecnologia:hover{
+    border: 1px solid #4F2ED0;
 }
