@@ -398,7 +398,6 @@ header .largura-max-cabecalho nav .topicos li:hover{
 
 footer{
     width: 100vw;
-    height: 10vh;
     background-color: #110E1B;
 
     display: flex;
@@ -415,7 +414,7 @@ footer .footer-line{
 footer section{
     width: 80%;
 
-    margin: 16px 0;
+    margin: 32px 0;
 
     display: flex;
     justify-content: space-between;
@@ -501,5 +500,17 @@ footer section .social-media a{
     #sobre-mim > section > .sobre-mim-text-box{
         margin: 0 auto ;
         margin: 0 32px;
+    }
+
+    footer > section{
+        flex-direction: column;
+    }
+
+    footer > section > div{
+        display: flex;
+        margin-top: 16px;
+        width: 70%;
+        justify-content: space-between;
+
     }
 }
