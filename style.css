@@ -430,73 +430,75 @@ footer section .social-media a{
     margin: 0 16px;
 }
 
-@media(max-width: 1000px){
-    .projeto{
-        width: 48% !important;
+ @media screen and (max-width: 1000px){
+    .projetos-container > .projeto{
+        width: 48% ;
     }
 }
-@media(max-width: 980px){
-    .sobre-mim-img{
-        display: none !important;
+
+ @media screen and (max-width: 980px){
+    #sobre-mim > .sobre-mim-img{
+        display: none ;
     }
 
-    .sobre-mim-img img{
-        display: none !important;
+    #sobre-mim > .sobre-mim-img img{
+        display: none ;
     }
 
-    #sobre-mim section .sobre-mim-text-box{
+    #sobre-mim > #sobre-mim section .sobre-mim-text-box{
         max-width: 80%;
     }
 
-    .home-img img{
-        display: none !important;
+    .home > .home-img img{
+        display: none ;
     }
 
-    .home-img{
-        display: none !important;
+    .home > .home-img{
+        display: none ;
     }
 
-    .apresentacao{
-        width: 100% !important;
+    .home > .apresentacao{
+        width: 100% ;
         margin: 0;
         text-align: center;
     }
 
-    .apresentacao div{
+    .home > .apresentacao div{
         justify-content: center;
     }
 }
 
-@media(max-width: 780px){
-    .tecnologia{
-        width: 100% !important;
-        height: fit-content !important;
-        flex-direction: row !important;
+ @media screen and (max-width: 780px){
+    .conhecimentos-container > .tecnologia{
+        width: 100% ;
+        height: fit-content ;
+        flex-direction: row ;
     }
 
-    .tecnologia img{
+    .conhecimentos-container > .tecnologia img{
         margin-right: 32px;
     }
 
-    .tecnologia p{
-        text-align: left !important;
+    .conhecimentos-container > .tecnologia p{
+        text-align: left ;
     }
 }
 
 
-@media(max-width: 680px){
-    .projeto{
-        width: 100% !important;
+ @media screen and (max-width: 680px){
+    .projetos-container > .projeto{
+        width: 100% ;
     }
 }
 
-@media(max-width: 550px){
+ @media screen and (max-width: 550px){
     .conhecimentos-container{
-        margin: 0 auto !important;
-        padding: 0 !important;
+        margin: 0 auto ;
+        padding: 0 ;
     }
     
-    .sobre-mim-text-box{
-        margin: 0 auto !important;
+    #sobre-mim > section > .sobre-mim-text-box{
+        margin: 0 auto ;
+        margin: 0 32px;
     }
 }
